@@ -3,26 +3,26 @@
 class Car
 {
 protected:
-	double maxSpeed_;
+	double speed_;
 	double acceleration_;
 public:
 	Car();
-	Car(double maxSpeed, double acceleration);
+	Car(double speed, double acceleration);
 
-	inline void setMaxSpeed(double maxSpeed)
+	inline void setSpeed(double speed)
 	{
-		maxSpeed_ = maxSpeed;
+		speed_ = speed;
 	}
-	inline double getMaxSpeed() const
+	virtual inline double getSpeed() const
 	{
-		return maxSpeed_;
+		return speed_;
 	}
 
 	inline void setAcceleration(double acceleration)
 	{
 		acceleration_ = acceleration;
 	}
-	inline double getAcceleration() const
+	virtual inline double getAcceleration() const
 	{
 		return acceleration_;
 	}

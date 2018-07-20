@@ -2,12 +2,12 @@
 
 Car::Car()
 {
-	maxSpeed_ = 0;
+	speed_ = 0;
 	acceleration_ = 0;
 }
 
-Car::Car(double maxSpeed, double acceleration)
+Car::Car(double speed, double acceleration)
 {
-	setMaxSpeed(maxSpeed);
+	setSpeed(speed);
 	setAcceleration(acceleration);
 }
