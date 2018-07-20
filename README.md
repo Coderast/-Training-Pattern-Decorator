@@ -18,5 +18,5 @@ You have some car with 5.0 speed and 20.0 acceleration: <br>
 So, when this car pick up Blue Speed Bonus on her way, you can give this bonus on certain term:  <br>
 `SpeedBoostBlue boostedCar(&someCar);`
 
-So, you don't change the car, you get boosted version without creating new car. <br>
+So, you don't change the car, but you get boosted version. <br>
 `(int) (boostedCar.getSpeed() / someCar.getSpeed()) == 2` _// true_
