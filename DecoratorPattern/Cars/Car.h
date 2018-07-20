@@ -9,7 +9,7 @@ public:
 	Car();
 	Car(double speed, double acceleration);
 
-	inline void setSpeed(double speed)
+	virtual inline void setSpeed(double speed)
 	{
 		speed_ = speed;
 	}
@@ -18,7 +18,7 @@ public:
 		return speed_;
 	}
 
-	inline void setAcceleration(double acceleration)
+	virtual inline void setAcceleration(double acceleration)
 	{
 		acceleration_ = acceleration;
 	}
