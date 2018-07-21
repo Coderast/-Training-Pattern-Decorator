@@ -15,10 +15,10 @@ You have car and you can give her some bonuses for speed or acceleration.
 
 # Example
 You have some car with 5.0 speed and 20.0 acceleration: <br>
-`Car someCar(5., 20.);`
+`BatyaCar someCar(5., 20.);`
 
 So, when this car pick up Blue Speed Bonus on her way, you can give this bonus on certain term:  <br>
 `SpeedBoostBlue boostedCar(&someCar);`
 
-So, you don't change the car, but you get boosted version. <br>
+So, you don't change the car, but you get boosted version without creating new `BatyaCar` object. <br>
 `(int) (boostedCar.getSpeed() / someCar.getSpeed()) == 2` _// true_
