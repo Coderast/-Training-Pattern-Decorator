@@ -3,7 +3,9 @@ My training project for learning pattern "Decorator" <br>
 You have car and you can give her some bonuses for speed or acceleration.
 
 # Structure
-`Car` -> `ModificatorBase` -> <br>
+`ICar` -> [`BatyaCar`, `ModificatorBase`] 
+
+`ModificatorBase` -> <br>
 [ <br>
 `AccelerationBoostBlue`, **x**2 <br>
 `AccelerationBoostRed`,  **x**3 <br>
