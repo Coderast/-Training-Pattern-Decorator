@@ -1,6 +1,6 @@
 #include "ModificatorBase.h"
 #include <stdexcept>
-ModificatorBase::ModificatorBase(Car * car)
+ModificatorBase::ModificatorBase(ICar * car)
 {
 	if (car != nullptr) {
 		car_ = car;

@@ -1,5 +1,5 @@
 #include "AccelerationBoostRed.h"
 
-AccelerationBoostRed::AccelerationBoostRed(Car * car) : ModificatorBase(car)
+AccelerationBoostRed::AccelerationBoostRed(ICar * car) : ModificatorBase(car)
 {
 }

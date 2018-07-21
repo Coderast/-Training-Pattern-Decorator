@@ -1,13 +1,13 @@
 #pragma once
-
-class Car
+#include "../ICar.h"
+class BatyaCar : public ICar
 {
 protected:
 	double speed_;
 	double acceleration_;
 public:
-	Car();
-	Car(double speed, double acceleration);
+	BatyaCar();
+	BatyaCar(double speed, double acceleration);
 
 	virtual inline void setSpeed(double speed)
 	{

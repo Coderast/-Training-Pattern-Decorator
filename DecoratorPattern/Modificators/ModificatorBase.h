@@ -1,18 +1,18 @@
 #pragma once
-#include "../Cars/Car.h"
+#include "../Cars/ICar.h"
 
-class ModificatorBase : public Car
+class ModificatorBase : public ICar
 {
 protected:
-	Car *car_;
+	ICar *car_;
 public:
-	ModificatorBase(Car *car);
+	ModificatorBase(ICar *car);
 
 	virtual inline void setSpeed(double speed)
 	{
 		car_->setSpeed(speed);
 	}
-	virtual inline double getSpeed()
+	virtual inline double getSpeed() const
 	{
 		return car_->getSpeed();
 	}

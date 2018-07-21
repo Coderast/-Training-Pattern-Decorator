@@ -1,9 +1,10 @@
 #include <iostream>
 #include "Modificators/SpeedBoostBlue/SpeedBoostBlue.h"
 #include "Modificators/AccelerationBoostRed/AccelerationBoostRed.h"
+#include "Cars/BatyaCar/BatyaCar.h"
 int main()
 {
-	Car someCar(20., 5.);
+	BatyaCar someCar(20., 5.);
 	SpeedBoostBlue someCarBoosted(&someCar);
 
 	std::cout << someCar.getSpeed() << std::endl;
